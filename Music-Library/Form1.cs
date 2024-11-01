@@ -21,5 +21,15 @@ namespace Music_Library
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text= "Діма kexbq";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
