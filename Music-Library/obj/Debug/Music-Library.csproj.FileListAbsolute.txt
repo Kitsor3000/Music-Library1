@@ -18,3 +18,13 @@ E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.Gener
 E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.CoreCompileInputs.cache
 E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.exe
 E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.pdb
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\bin\Debug\Music-Library.exe.config
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\bin\Debug\Music-Library.exe
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\bin\Debug\Music-Library.pdb
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.AssemblyReference.cache
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music_Library.Form1.resources
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music_Library.Properties.Resources.resources
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.GenerateResource.cache
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.CoreCompileInputs.cache
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music-Library.exe
+C:\Users\grini\source\repos\ОКР\Music-Library1\Music-Library\obj\Debug\Music-Library.pdb
