@@ -19,12 +19,29 @@ namespace Music_Library
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.ColumnCount = 2;
+            dataGridView1.Columns[0].Name = "Title";
+            dataGridView1.Columns[1].Name = "Author";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text= "Діма kexbq";
+            string title = txtTitle.Text.Trim();
+            string author = txtAuthor.Text.Trim();
+
+            // Перевірка, що поля не порожні
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(author))
+            {
+                MessageBox.Show("Please enter both Title and Author.");
+                return;
+            }
+
+            // Додаємо рядок до DataGridView
+            dataGridView1.Rows.Add(title, author);
+
+            // Очищення текстбоксів після додавання
+            txtTitle.Clear();
+            txtAuthor.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)
