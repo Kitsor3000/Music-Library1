@@ -19,9 +19,7 @@ namespace Music_Library
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 2;
-            dataGridView1.Columns[0].Name = "Title";
-            dataGridView1.Columns[1].Name = "Author";
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,6 +50,41 @@ namespace Music_Library
         private void button2_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAuthor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
