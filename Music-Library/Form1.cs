@@ -48,5 +48,10 @@ namespace Music_Library
         {
             //Pull blackadam
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+        }
     }
 }

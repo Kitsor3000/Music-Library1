@@ -8,3 +8,13 @@ D:\ХПК\Ком.Роз\Music-Library\Music-Library\obj\Debug\Music-Library.cspr
 D:\ХПК\Ком.Роз\Music-Library\Music-Library\obj\Debug\Music-Library.csproj.CoreCompileInputs.cache
 D:\ХПК\Ком.Роз\Music-Library\Music-Library\obj\Debug\Music-Library.exe
 D:\ХПК\Ком.Роз\Music-Library\Music-Library\obj\Debug\Music-Library.pdb
+E:\student\Git\Music-Library1\Music-Library\bin\Debug\Music-Library.exe.config
+E:\student\Git\Music-Library1\Music-Library\bin\Debug\Music-Library.exe
+E:\student\Git\Music-Library1\Music-Library\bin\Debug\Music-Library.pdb
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.AssemblyReference.cache
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music_Library.Form1.resources
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music_Library.Properties.Resources.resources
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.GenerateResource.cache
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.csproj.CoreCompileInputs.cache
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.exe
+E:\student\Git\Music-Library1\Music-Library\obj\Debug\Music-Library.pdb
