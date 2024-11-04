@@ -63,11 +63,7 @@
             // 
             // button1
             // 
-<<<<<<< HEAD
-            this.button1.Location = new System.Drawing.Point(528, 394);
-=======
             this.button1.Location = new System.Drawing.Point(571, 428);
->>>>>>> Grunuk
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 44);
@@ -79,15 +75,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(525, 197);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
-=======
             this.label1.Location = new System.Drawing.Point(210, 392);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
->>>>>>> Grunuk
             this.label1.TabIndex = 1;
             this.label1.Text = "Author";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -99,33 +89,18 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-<<<<<<< HEAD
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-=======
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
             this.dataGridView1.Location = new System.Drawing.Point(0, 22);
->>>>>>> Grunuk
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-<<<<<<< HEAD
-            this.dataGridView1.Size = new System.Drawing.Size(433, 399);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(528, 217);
-            this.txtTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(100, 22);
-=======
-            this.dataGridView1.Size = new System.Drawing.Size(829, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(829, 332);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
@@ -158,54 +133,30 @@
             this.txtTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(132, 22);
->>>>>>> Grunuk
             this.txtTitle.TabIndex = 3;
             this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
             // txtAuthor
             // 
-<<<<<<< HEAD
-            this.txtAuthor.Location = new System.Drawing.Point(528, 288);
-            this.txtAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(100, 22);
-=======
             this.txtAuthor.Location = new System.Drawing.Point(4, 439);
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(145, 22);
->>>>>>> Grunuk
             this.txtAuthor.TabIndex = 4;
             this.txtAuthor.TextChanged += new System.EventHandler(this.txtAuthor_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-<<<<<<< HEAD
-            this.label2.Location = new System.Drawing.Point(528, 266);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
-=======
             this.label2.Location = new System.Drawing.Point(56, 392);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
->>>>>>> Grunuk
             this.label2.TabIndex = 5;
             this.label2.Text = "Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
-<<<<<<< HEAD
-            this.button2.Location = new System.Drawing.Point(532, 96);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 60);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Очищення";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-=======
             this.textBox1.Location = new System.Drawing.Point(319, 439);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
@@ -246,11 +197,11 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.вихідToolStripMenuItem,
             this.файлToolStripMenuItem,
             this.очиститиToolStripMenuItem,
             this.сортуваннняToolStripMenuItem,
-            this.масивToolStripMenuItem,
-            this.вихідToolStripMenuItem});
+            this.масивToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(828, 28);
@@ -303,19 +254,19 @@
             // аЯToolStripMenuItem
             // 
             this.аЯToolStripMenuItem.Name = "аЯToolStripMenuItem";
-            this.аЯToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.аЯToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.аЯToolStripMenuItem.Text = "А-Я";
             // 
             // яАToolStripMenuItem
             // 
             this.яАToolStripMenuItem.Name = "яАToolStripMenuItem";
-            this.яАToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.яАToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.яАToolStripMenuItem.Text = "Я-А";
             // 
             // рікToolStripMenuItem
             // 
             this.рікToolStripMenuItem.Name = "рікToolStripMenuItem";
-            this.рікToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.рікToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.рікToolStripMenuItem.Text = "Рік";
             // 
             // масивToolStripMenuItem
@@ -345,39 +296,28 @@
             this.очиститиМасивToolStripMenuItem.Name = "очиститиМасивToolStripMenuItem";
             this.очиститиМасивToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
             this.очиститиМасивToolStripMenuItem.Text = "Очистити масив";
->>>>>>> Grunuk
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-=======
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(828, 482);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
->>>>>>> Grunuk
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAuthor);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-<<<<<<< HEAD
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximizeBox = false;
-=======
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> Grunuk
             this.Name = "Form1";
-            this.Text = "Бібліотека плейлистів";
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -419,4 +359,3 @@
         private System.Windows.Forms.ToolStripMenuItem очиститиМасивToolStripMenuItem;
     }
 }
-
