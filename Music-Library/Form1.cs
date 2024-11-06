@@ -37,34 +37,7 @@ namespace Music_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string title = txtTitle.Text.Trim();
-            string author = txtAuthor.Text.Trim();
-            string genre = textBox1.Text.Trim();
-            string yearText = textBox2.Text.Trim();
-
-            // Перевірка, що всі поля заповнені
-            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(author) ||
-                string.IsNullOrEmpty(genre) || string.IsNullOrEmpty(yearText))
-            {
-                MessageBox.Show("Будь ласка, заповніть всі поля: Назва, Виконавець, Жанр, Рік.");
-                return;
-            }
-
-            // Перевірка, що рік є числом
-            if (!int.TryParse(yearText, out int year))
-            {
-                MessageBox.Show("Будь ласка, введіть коректний рік.");
-                return;
-            }
-
-            // Додаємо рядок до DataGridView
-            dataGridView1.Rows.Add(title, author, genre, year);
-
-            // Очищення текстбоксів після додавання
-            txtTitle.Clear();
-            txtAuthor.Clear();
-            textBox1.Clear();
-            textBox2.Clear();
+           
         }
 
         private void очиститиToolStripMenuItem_Click(object sender, EventArgs e)
