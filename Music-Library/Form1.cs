@@ -13,7 +13,11 @@ namespace Music_Library
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
+=======
+           
+>>>>>>> dev
         }
 
         private void AddDefaultTracks()
@@ -37,7 +41,38 @@ namespace Music_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
            
+=======
+            string title = txtTitle.Text.Trim();
+            string author = txtAuthor.Text.Trim();
+            string genre = txtGenre.Text.Trim();
+            string yearText = txtYear.Text.Trim();
+
+            // Перевірка, що всі поля заповнені
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(author) ||
+                string.IsNullOrEmpty(genre) || string.IsNullOrEmpty(yearText))
+            {
+                MessageBox.Show("Будь ласка, заповніть всі поля: Назва, Виконавець, Жанр, Рік.");
+                return;
+            }
+
+            // Перевірка, що рік є числом
+            if (!int.TryParse(yearText, out int year))
+            {
+                MessageBox.Show("Будь ласка, введіть коректний рік.");
+                return;
+            }
+
+            // Додаємо рядок до DataGridView
+            dataGridView1.Rows.Add(title, author, genre, year);
+
+            // Очищення текстбоксів після додавання
+            txtTitle.Clear();
+            txtAuthor.Clear();
+            txtGenre.Clear();
+            txtYear.Clear();
+>>>>>>> dev
         }
 
         private void очиститиToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,6 +84,7 @@ namespace Music_Library
         {
             // Сортування за назвою від А до Я
             dataGridView1.Sort(dataGridView1.Columns["Name"], System.ComponentModel.ListSortDirection.Ascending);
+<<<<<<< HEAD
         }
 
         private void яАToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,5 +111,27 @@ namespace Music_Library
         {
            Close();
         }
+=======
+        }
+
+        private void яАToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Сортування за назвою від Я до А
+            dataGridView1.Sort(dataGridView1.Columns["Name"], System.ComponentModel.ListSortDirection.Descending);
+        }
+
+        private void рікToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Сортування за роком зростанням
+            dataGridView1.Sort(dataGridView1.Columns["Year"], System.ComponentModel.ListSortDirection.Ascending);
+        }
+
+        private void вивестиЗаЗамовчуваннямToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddDefaultTracks();
+        }
+
+      
+>>>>>>> dev
     }
 }
