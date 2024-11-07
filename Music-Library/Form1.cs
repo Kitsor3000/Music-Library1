@@ -1,33 +1,17 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Music_Library
 {
     public partial class Form1 : Form
     {
+        private List<(string Title, string Author, string Genre, int Year)> musicArray = new List<(string Title, string Author, string Genre, int Year)>();
+
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void AddDefaultTracks()
-        {
-            // Список треків за замовчуванням
-            var defaultTracks = new[]
-            {
-                new { Name = "Track 1", Author = "Artist A", Genre = "Rock", Year = 2001 },
-                new { Name = "Track 2", Author = "Artist B", Genre = "Pop", Year = 2003 },
-                new { Name = "Track 3", Author = "Artist C", Genre = "Jazz", Year = 1999 },
-                new { Name = "Track 4", Author = "Artist D", Genre = "Classical", Year = 2010 },
-                new { Name = "Track 5", Author = "Artist E", Genre = "Hip-hop", Year = 2015 }
-            };
-
-            // Додавання треків до DataGridView
-            foreach (var track in defaultTracks)
-            {
-                dataGridView1.Rows.Add(track.Name, track.Author, track.Genre, track.Year);
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,14 +36,98 @@ namespace Music_Library
                 return;
             }
 
-            // Додаємо рядок до DataGridView
+            // Додаємо рядок до DataGridView та масиву
             dataGridView1.Rows.Add(title, author, genre, year);
+            musicArray.Add((title, author, genre, year));
 
             // Очищення текстбоксів після додавання
             txtTitle.Clear();
             txtAuthor.Clear();
             txtGenre.Clear();
             txtYear.Clear();
+        }
+
+        private void AddDefaultTracks()
+        {
+            // Список треків за замовчуванням
+            var defaultTracks = new[]
+            {
+                ("Track 1", "Artist A", "Rock", 2001),
+                ("Track 2", "Artist B", "Pop", 2003),
+                ("Track 3", "Artist C", "Jazz", 1999),
+                ("Track 4", "Artist D", "Classical", 2010),
+                ("Track 5", "Artist E", "Hip-hop", 2015)
+            };
+
+            foreach (var track in defaultTracks)
+            {
+                dataGridView1.Rows.Add(track.Item1, track.Item2, track.Item3, track.Item4);
+                musicArray.Add(track);
+            }
+        }
+
+        private void записатиУФайлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (StreamWriter writer = new StreamWriter("music_library.txt"))
+            {
+                foreach (var track in musicArray)
+                {
+                    writer.WriteLine($"{track.Title},{track.Author},{track.Genre},{track.Year}");
+                }
+            }
+            MessageBox.Show("Дані збережено у файл");
+        }
+
+        private void прочитатиЗФайлуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            musicArray.Clear();
+
+            if (File.Exists("music_library.txt"))
+            {
+                using (StreamReader reader = new StreamReader("music_library.txt"))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        string[] parts = line.Split(',');
+                        if (parts.Length == 4 && int.TryParse(parts[3], out int year))
+                        {
+                            string title = parts[0];
+                            string author = parts[1];
+                            string genre = parts[2];
+                            dataGridView1.Rows.Add(title, author, genre, year);
+                            musicArray.Add((title, author, genre, year));
+                        }
+                    }
+                }
+                MessageBox.Show("Дані загружені");
+            }
+            else
+            {
+                MessageBox.Show("Файл не знайдено");
+            }
+        }
+
+        private void прочитатиЗМасивууToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            if (musicArray.Count == 0)
+            {
+                MessageBox.Show("Масив пустий");
+                return;
+            }
+
+            foreach (var item in musicArray)
+            {
+                dataGridView1.Rows.Add(item.Title, item.Author, item.Genre, item.Year);
+            }
+        }
+
+        private void очиститиМасивToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            musicArray.Clear();
+            MessageBox.Show("Масив очищено");
         }
 
         private void очиститиToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,19 +138,19 @@ namespace Music_Library
         private void аЯToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Сортування за назвою від А до Я
-            dataGridView1.Sort(dataGridView1.Columns["Column1"], System.ComponentModel.ListSortDirection.Ascending);
+            dataGridView1.Sort(dataGridView1.Columns[0], System.ComponentModel.ListSortDirection.Ascending);
         }
 
         private void яАToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Сортування за назвою від Я до А
-            dataGridView1.Sort(dataGridView1.Columns["Column1"], System.ComponentModel.ListSortDirection.Descending);
+            dataGridView1.Sort(dataGridView1.Columns[0], System.ComponentModel.ListSortDirection.Descending);
         }
 
         private void рікToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Сортування за роком зростанням
-            dataGridView1.Sort(dataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Ascending);
+            dataGridView1.Sort(dataGridView1.Columns[3], System.ComponentModel.ListSortDirection.Ascending);
         }
 
         private void вивестиЗаЗамовчуваннямToolStripMenuItem_Click(object sender, EventArgs e)
