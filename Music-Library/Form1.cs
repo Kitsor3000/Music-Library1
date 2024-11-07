@@ -11,15 +11,6 @@ namespace Music_Library
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-<<<<<<< HEAD
-
-=======
-           
->>>>>>> dev
-        }
-
         private void AddDefaultTracks()
         {
             // Список треків за замовчуванням
@@ -41,9 +32,6 @@ namespace Music_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-           
-=======
             string title = txtTitle.Text.Trim();
             string author = txtAuthor.Text.Trim();
             string genre = txtGenre.Text.Trim();
@@ -72,7 +60,6 @@ namespace Music_Library
             txtAuthor.Clear();
             txtGenre.Clear();
             txtYear.Clear();
->>>>>>> dev
         }
 
         private void очиститиToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,47 +70,19 @@ namespace Music_Library
         private void аЯToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Сортування за назвою від А до Я
-            dataGridView1.Sort(dataGridView1.Columns["Name"], System.ComponentModel.ListSortDirection.Ascending);
-<<<<<<< HEAD
+            dataGridView1.Sort(dataGridView1.Columns["Column1"], System.ComponentModel.ListSortDirection.Ascending);
         }
 
         private void яАToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Сортування за назвою від Я до А
-            dataGridView1.Sort(dataGridView1.Columns["Name"], System.ComponentModel.ListSortDirection.Descending);
+            dataGridView1.Sort(dataGridView1.Columns["Column1"], System.ComponentModel.ListSortDirection.Descending);
         }
 
         private void рікToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Сортування за роком зростанням
-            dataGridView1.Sort(dataGridView1.Columns["Year"], System.ComponentModel.ListSortDirection.Ascending);
-        }
-
-       
-
-        private void вивестиЗаЗамовчуваннямToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            AddDefaultTracks();
-
-        }
-
-        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           Close();
-        }
-=======
-        }
-
-        private void яАToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Сортування за назвою від Я до А
-            dataGridView1.Sort(dataGridView1.Columns["Name"], System.ComponentModel.ListSortDirection.Descending);
-        }
-
-        private void рікToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Сортування за роком зростанням
-            dataGridView1.Sort(dataGridView1.Columns["Year"], System.ComponentModel.ListSortDirection.Ascending);
+            dataGridView1.Sort(dataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Ascending);
         }
 
         private void вивестиЗаЗамовчуваннямToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,7 +90,9 @@ namespace Music_Library
             AddDefaultTracks();
         }
 
-      
->>>>>>> dev
+        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

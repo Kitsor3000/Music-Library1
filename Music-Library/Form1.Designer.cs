@@ -56,10 +56,9 @@
             this.прочитатиЗМасивууToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.очиститиМасивToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вивестиЗаЗамовчуваннямToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-<<<<<<< HEAD
-=======
+
             this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
->>>>>>> dev
+
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -96,13 +95,11 @@
             this.Column2,
             this.Column3,
             this.Column4});
-<<<<<<< HEAD
-            this.dataGridView1.Location = new System.Drawing.Point(0, 24);
-=======
+
 
             this.dataGridView1.Location = new System.Drawing.Point(4, 30);
 
->>>>>>> dev
+
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -145,11 +142,9 @@
             // 
             // txtAuthor
             // 
-<<<<<<< HEAD
-            this.txtAuthor.Location = new System.Drawing.Point(150, 439);
-=======
+
             this.txtAuthor.Location = new System.Drawing.Point(159, 439);
->>>>>>> dev
+
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(145, 22);
@@ -166,19 +161,13 @@
             // 
             // txtGenre
             // 
-<<<<<<< HEAD
-            this.textBox1.Location = new System.Drawing.Point(319, 439);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 6;
-=======
+
             this.txtGenre.Location = new System.Drawing.Point(319, 439);
             this.txtGenre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGenre.Name = "txtGenre";
             this.txtGenre.Size = new System.Drawing.Size(100, 22);
             this.txtGenre.TabIndex = 6;
->>>>>>> dev
+
             // 
             // label3
             // 
@@ -200,19 +189,12 @@
             // 
             // txtYear
             // 
-<<<<<<< HEAD
-            this.textBox2.Location = new System.Drawing.Point(454, 439);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(80, 22);
-            this.textBox2.TabIndex = 9;
-=======
             this.txtYear.Location = new System.Drawing.Point(454, 439);
             this.txtYear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(80, 22);
             this.txtYear.TabIndex = 9;
->>>>>>> dev
+
             // 
             // menuStrip1
             // 
@@ -230,7 +212,7 @@
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
-<<<<<<< HEAD
+
             // вихідToolStripMenuItem
             // 
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
@@ -238,8 +220,8 @@
             this.вихідToolStripMenuItem.Text = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
-=======
->>>>>>> dev
+
+
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -325,9 +307,7 @@
             this.вивестиЗаЗамовчуваннямToolStripMenuItem.Name = "вивестиЗаЗамовчуваннямToolStripMenuItem";
             this.вивестиЗаЗамовчуваннямToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
             this.вивестиЗаЗамовчуваннямToolStripMenuItem.Text = "Вивести за замовчуванням";
-<<<<<<< HEAD
-            this.вивестиЗаЗамовчуваннямToolStripMenuItem.Click += new System.EventHandler(this.вивестиЗаЗамовчуваннямToolStripMenuItem_Click_1);
-=======
+
             this.вивестиЗаЗамовчуваннямToolStripMenuItem.Click += new System.EventHandler(this.вивестиЗаЗамовчуваннямToolStripMenuItem_Click);
             // 
             // вихідToolStripMenuItem
@@ -335,7 +315,7 @@
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
             this.вихідToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.вихідToolStripMenuItem.Text = "Вихід";
->>>>>>> dev
+
             // 
             // Form1
             // 
@@ -358,7 +338,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
