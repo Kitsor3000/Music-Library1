@@ -96,6 +96,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(4, 30);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -107,24 +108,28 @@
             this.Column1.HeaderText = "Name";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Author";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Genre";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Year";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // txtTitle
             // 
@@ -244,21 +249,21 @@
             // аЯToolStripMenuItem
             // 
             this.аЯToolStripMenuItem.Name = "аЯToolStripMenuItem";
-            this.аЯToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.аЯToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.аЯToolStripMenuItem.Text = "А-Я";
             this.аЯToolStripMenuItem.Click += new System.EventHandler(this.аЯToolStripMenuItem_Click);
             // 
             // яАToolStripMenuItem
             // 
             this.яАToolStripMenuItem.Name = "яАToolStripMenuItem";
-            this.яАToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.яАToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.яАToolStripMenuItem.Text = "Я-А";
             this.яАToolStripMenuItem.Click += new System.EventHandler(this.яАToolStripMenuItem_Click);
             // 
             // рікToolStripMenuItem
             // 
             this.рікToolStripMenuItem.Name = "рікToolStripMenuItem";
-            this.рікToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.рікToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.рікToolStripMenuItem.Text = "Рік";
             this.рікToolStripMenuItem.Click += new System.EventHandler(this.рікToolStripMenuItem_Click);
             // 

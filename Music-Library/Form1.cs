@@ -12,7 +12,35 @@ namespace Music_Library
         public Form1()
         {
             InitializeComponent();
+
+            txtTitle.KeyPress += TxtTextBoxes_KeyPress;
+            txtAuthor.KeyPress += TxtTextBoxes_KeyPress;
+            txtGenre.KeyPress += TxtTextBoxes_KeyPress;
+            txtYear.KeyPress += TxtYear_KeyPress;
         }
+
+
+
+        // Обробник для поля "Рік" (тільки цифри, без спеціальних символів)
+        private void TxtYear_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Забороняє введення символів, крім цифр
+            }
+        }
+
+        // Обробник для полів "Назва", "Автор", "Жанр" (тільки літери)
+        private void TxtTextBoxes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Забороняє введення символів, крім букв і пробілів
+            }
+        }
+
+        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -29,10 +57,10 @@ namespace Music_Library
                 return;
             }
 
-            // Перевірка, що рік є числом
-            if (!int.TryParse(yearText, out int year))
+            // Перевірка року: має бути числом, не від'ємним і з 4 цифр
+            if (!int.TryParse(yearText, out int year) || year < 1000 || year > 9999)
             {
-                MessageBox.Show("Будь ласка, введіть коректний рік.");
+                MessageBox.Show("Будь ласка, введіть коректний рік (4 цифри, не від'ємне число).");
                 return;
             }
 
